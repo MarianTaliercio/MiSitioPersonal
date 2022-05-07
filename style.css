@@ -1,0 +1,77 @@
+html {
+    font-family: "Poppins", sans-serif;
+	height: 100%;
+	/*Image only BG fallback*/
+	/*background = gradient + image pattern combo*/
+	/*background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));*/
+}
+
+body {
+    margin: 0;
+    background-color:white
+}
+  
+header {
+    background-color:darkslategrey;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+}
+/*.menu{
+    height: 20px;
+    text-align: center;
+}
+
+.menu ul{
+    list-style: none;
+    display:inline-block;
+    background-color:white;
+ }
+
+.menu ul li{
+     float: left;
+     margin-top: 0px;
+     display: block;
+     padding: 5px 30px;
+ }*/
+
+ .h2center {
+    text-align: center;
+ }
+
+ .caja1 {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.izquierda {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    margin-left: 20;
+}
+
+.izquierda ul {
+    list-style-type:none;
+    text-align: left;
+}
+
+.derecha {
+    display:inline-block;
+    margin: 10px 20px 5px 20px;
+}
+
+.derecha ul {
+    list-style-type:none;
+    text-align: left;
+
+/*.caja1 {
+    height: 200px;
+    margin: 0 auto;
+}*/
