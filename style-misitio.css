@@ -9,32 +9,201 @@ html {
 }
 
 body {
-    background-color: #eeeeee;
-    min-height: 100vh;
+    background-color: #B4B4B4;
+}
+
+li {
+    list-style: none;
+}
+
+a:link, a:visited, a:active {
+text-decoration: none;
+}
+
+a {
+    color: Black;
+}
+
+/*Empieza el navbar*/
+
+.header_nav {
+    height: 90vh;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 20px 20px 0px 20px;
+    padding: 30px;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: #e5e5e5 solid 0.1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.nav-li ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.icon-menu {
+    max-height: 50px;
+}
+
+.cbox_nav {
+    display: none;
+}
+
+/*Termina el navbar*/
+
+/*Empieza el Hero*/
+
+.section-hero {
+    /*background-color: #DE8000;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 600px;
+}
+
+.article-hero1  {
+    /*background-color: red;*/
+    width: 100%;
+    /*height: 600px;*/
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-header {
-    background-color: #364552;
-    color:white;
-    padding: 20px 15px;
+.article-hero2 {
+    /*background-color: #DE8000;*/
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+}
+
+.title-hero {
+    max-width: 90%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    gap: 30px;
+}
+
+.title-hero h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    width: 90%;
+}
+
+.title-hero p {
+    max-width: 75% ;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.btn-hero button {
+    margin-right: 20px;
+    padding: 15px 0px;
+    width: 125px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-hero-1 {
+    background-color: #DE8000;
+    color: white;
+}
+
+.contenedor-hero {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    color: black;
+    gap: 50px;
+    padding: 20px 10px;
+    margin-right: 50px;
+}
+
+.contenedor-hero div {
+    width: 10rem;
+}
+
+.contenedor-img1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contenedor-img2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.img-hero1 { 
+    width: 70%;
+    border-radius: 10px;
+}
+
+.img-hero2 {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.img-hero3 { 
+    width: 70%; 
+    border-radius: 10px;
+}
+
+.img-hero4 {
+    width: 70%;
+    border-radius: 10px;
+}
+
+
+/*Termina el Hero*/
+
+/*Empieza la section2*/
+
+.section2 {
+    height: 90vh;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0 20px;
+    padding: 100px;
+}
+
+#Exp {
     text-align: center;
 }
 
-h1{
-    font-size: 50px;
-}
-
+/*
 h2 {
-    
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    font-weight: 500;
 }
 
 h3 {
     padding: 15px 5px;
+    font-weight: 500;
 }
 
 ul {
@@ -50,46 +219,47 @@ li {
     justify-content: center;
 
 }
+*/
 
-.tarjeta1, .tarjeta2{
-    transition: box-shadow 0.3s ease;
+.section2-cards {
+    display: flex;
+    justify-content: center
+}
+
+.section2-cards-1, .section2-cards-2{
+    transition:  0.3s ease;
     background-color: white;
-    width: 300px;
-    height: 400px;
-    padding: 10px;
+    width: 350px;
+    height: 450px;
+    padding: 10px 0px;
     margin: 30px;
     border-radius: 15px;
     cursor: pointer;
-}
-
-section article:hover {
     box-shadow:0 2px 10px rgba(0,0,0,.3);
-
 }
 
-.whatsapp {
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
-  }
-  
-  .whatsapp-icon {
-    margin-top:13px;
-  }
+.h3-cards {
+    padding: 15px 15px;
+    font-weight: 500;
+}
+
+.div-cards {
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.img_trabajo_2, .img_trabajo_3 {
+    width: 350px;
+    height: 230px;
+}
 
 footer {
     width: 100%;
-    background-color: #364552;
+    background-color: #364552 solid 0.5px;;
     color:white;
-    padding: 30px;
+    padding: 20px;
     margin-top: auto;
 }
 
