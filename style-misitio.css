@@ -43,8 +43,13 @@ a {
     align-items: center;
     border: #e5e5e5 solid 0.1px;
     border-radius: 5px;
-    padding: 10px;
-    order: 0;
+    padding: 10px 70px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
 }
 
 .icon-menu {
