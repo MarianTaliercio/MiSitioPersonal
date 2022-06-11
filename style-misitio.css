@@ -10,6 +10,7 @@ html {
 
 body {
     background-color: #B4B4B4;
+    width: 100vw;
 }
 
 li {
@@ -27,7 +28,7 @@ a {
 /*Empieza el navbar*/
 
 .header_nav {
-    height: 90vh;
+
     background-color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -36,22 +37,19 @@ a {
 }
 
 .nav_menu {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: #e5e5e5 solid 0.1px;
     border-radius: 5px;
     padding: 10px;
-}
-
-.nav-li ul {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
+    order: 0;
 }
 
 .icon-menu {
     max-height: 50px;
+    display: none;
 }
 
 .cbox_nav {
@@ -181,49 +179,20 @@ a {
 /*Empieza la section2*/
 
 .section2 {
-    height: 90vh;
     background-color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin: 0 20px;
-    padding: 100px;
+    padding: 0px 100px 100px;
 }
 
 #Exp {
     text-align: center;
 }
 
-/*
-h2 {
-    font-size: 25px;
-    text-align: center;
-    padding: 10px;
-    font-weight: 500;
-}
-
-h3 {
-    padding: 15px 5px;
-    font-weight: 500;
-}
-
-ul {
-    padding: 10px;
-}
-
-li {
-    list-style: none;
-}
-
-.cartas {
-    display: flex;
-    justify-content: center;
-
-}
-*/
-
 .section2-cards {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .section2-cards-1, .section2-cards-2{
@@ -255,6 +224,9 @@ li {
     height: 230px;
 }
 
+
+/*Termina la section2*/
+
 footer {
     width: 100%;
     background-color: #364552 solid 0.5px;;
@@ -266,4 +238,118 @@ footer {
 footer section {
     display: flex;
     justify-content: space-around;
+}
+
+
+
+
+
+@media  (max-width: 500px) {
+
+.header_nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-menu {
+    display: block;
+}
+
+.menu {
+    background-color: #e08300;
+    
+    border-radius: 5px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    display: none;
+}
+
+.menu li{
+    padding: 65px 0px;
+    text-transform: uppercase;
+}
+
+.menu_a {
+    color: white;
+    font-weight: bold;
+}
+
+.cbox_nav:checked ~ .menu {
+    display: block;
+}
+
+.title-hero h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    width: 100%;
+}
+
+.btn-hero button {
+    margin-bottom: 10px;
+}
+
+/*Empieza el Hero*/
+
+.section-hero {
+    max-height: 1000px;
+}
+
+.title-hero {
+    width: 100vw;
+    margin-left: 0px;
+    padding-top: 20px;
+}
+
+.title-hero p {
+    /*background-color: #DE8000;*/
+    max-width: 100% ;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.contenedor-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;
+}
+
+
+.article-hero2 {
+    display: none;
+}
+
+/*Termina el Hero*/
+
+/*Empieza la section2*/
+
+
+
+.section2 {
+    margin: -1px 20px;
+    padding: 5px;
+}
+
+.section2-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+.section2-cards-1, .section2-cards-2{
+    align-items: center;
+    width: 80vw;
+    padding: 5px px;
+    margin: 10px;
+}
+
+.img_trabajo_2, .img_trabajo_3 {
+    width: 80vw;
+    height: 230px;
+}
+
+/*Termina la section2*/
 }
