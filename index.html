@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/422489178a.js" crossorigin="anonymous"></script>
 </head>
 <body class="">
     <header class="header_nav">
@@ -22,14 +23,14 @@
             <ul class="menu">
                 <li><a href="#" class="menu_a">Empresas</a></li>
                 <li> <a href="#Exp" class="menu_a">Experiencia</a></li>
-                <li><a href="#" class="menu_a">Blog</a></li>
+                <li><a href="#servicios" class="menu_a">Servicios</a></li>
                 <li><a href="#" class="menu_a">Contacto</a></li>
             </ul>
         </nav>
 
-        <!--Termina el navbar-->
+<!--Termina el navbar-->
 
-        <!--Empieza el Hero-->
+<!--Empieza el Hero-->
         <section class="section-hero">
             <article class="article-hero1">
                 <div class="title-hero">
@@ -79,11 +80,15 @@
                 <div class="item"></div>
             </div>
         </section>
-        <!--Termina el Hero-->
-    </header>
+    </header>    
+<!--Termina el Hero-->
+
+
+<!--Seccion Experiencia-->
+    
 
     <section class="section2">
-        <h2 id="Exp">Experiencia
+        <h2 id="Exp">EXPERIENCIA
         </h2>
         <section class="section2-cards">
             
@@ -117,12 +122,80 @@
             </article>
         </section>
     </section>
-  
-    <footer>
-            <section>
-                <p>Hecho por Mariano Taliercio <i class="em em-cactus" aria-role="presentation" aria-label="CACTUS"></i></p>
-                <p>Creado en 2022</p>
-            </section>
+
+<!--Termina Seccion Experiencia-->
+
+<!--Seccion Servicios-->
+
+    <section class="servicios">
+        <h2 id="servicios">MIS SERVICIOS
+        </h2>
+        <div class="servicios_box">
+            <div class="servicio-ads">
+                <h3>Facebook ADS & Google Ads</h3>
+                <div class="img-ads"></div>
+                <p>Ayudamos a las empresas a conseguir nuevos clientes a través de Facebook ads y publicidad en redes sociales, gracias a nuestro equipo experimentado y a la última tecnología.
+                </p>
+            </div>
+            <div class="servicio-programacion">
+                <h3>Programacion Web</h3>
+                <div class="img-programacion"></div>
+                <p>Entendemos a tus clientes y hacemos webs que responden a sus necesidades.
+                </p>
+            </div>
+            <div class="servicio-360">
+                <h3>Marketing Digital 360°</h3>
+                <div class="img-mkt360"></div>
+                <p>Ofrecemos un servicio de marketing digital enfocado en atraer tráfico de calidad que se traduzca en ventas.
+                </p>
+            </div>
+        </div>
+        <i class="fa-solid fa-arrow-down-long"></i>
+    </section>
+
+<!--Termina Seccion Servicios-->
+    
+<!--Seccion mis clientes-->
+
+    <section class="servicios">
+        <h2 id="servicios">Clientes
+        </h2>
+        
+        <div class="clientes-box">
+            <i class="fa-solid fa-arrow-right-long flecha_cliente"></i>
+            <div class="cliente1"></div>
+            <div class="cliente2"></div>
+            <div class="cliente3"></div>
+            <div class="cliente4"></div>
+            <i class="fa-solid fa-arrow-left-long flecha_cliente"></i>
+        </div>
+        
+    </section>
+
+<!--Termina Seccion mis clientes-->
+
+
+    <footer class="footer">
+        <div class="footer-form">
+            <h3>
+                Contactanos
+            </h3>
+            <input type="text" id="input-form" placeholder="Nombre">
+            <input type="text" id="input-form" placeholder="Email">
+            <input type="text" id="input-form" placeholder="Telefono">
+            <p>Presupuesto a Solicitar</p>
+            <select name="presupuesto" id="input-form">
+                <option>Marketing360</option>
+                <option>Programacion</option>
+                <option>Publicidad</option>
+                <option>Todos</option>
+            </select>
+            <input type="submit" class="enviar_form" name="Opciones" value="ENVIAR">
+        </div>
+        <div class="footer-marca">
+            <p>Hecho por Mariano Taliercio <i class="em em-cactus" aria-role="presentation" aria-label="CACTUS"></i></p>
+            <p>Creado en 2022</p>
+        </div>
     </footer> 
 </body>
 </html>

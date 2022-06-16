@@ -92,7 +92,7 @@ a {
 }  
 
 .item {
-    background-color:yellow;
+   /* background-color:yellow;*/
     border-radius: 5px;
 }
 
@@ -153,7 +153,7 @@ a {
 }
 
 .btn-hero-1 {
-    background-color: #DE8000;
+    background-color: #ffc311;
     color: white;
 }
 
@@ -181,8 +181,9 @@ a {
 
 .section2 {
     background-color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0px 20px 0px 20px;
     padding: 30px;
     /*background-color: yellow;*/
@@ -190,11 +191,17 @@ a {
 
 #Exp {
     text-align: center;
+    font-weight: 500;
+    width: 280px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
 }
 
 .section2-cards {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .section2-cards-1, .section2-cards-2{
@@ -229,19 +236,159 @@ a {
 
 /*Termina la section2*/
 
+/*Empieza la seccion servicios*/
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0px 20px 0px 20px;
+    padding: 30px;
+}
+
+.servicios h2 {
+    font-weight: 500;
+    width: 280px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.servicios_box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 0px 0px 0px ;
+}
+
+.servicio-ads, .servicio-programacion, .servicio-360  {
+    /*background-color: #DE8000;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+}
+
+.img-ads {
+    /*background-color: red;*/
+    height: 200px;
+    width: 200px;
+    background: url(/Img/servicio-publicidad-ads.png) no-repeat center/cover;
+    
+}
+
+.img-programacion {
+    /*background-color: red;*/
+    height: 200px;
+    width: 200px;
+    background: url(/Img/servicio-programacion.png) no-repeat center/cover;
+}
+
+.img-mkt360 {
+    height: 200px;
+    width: 200px;
+    background: url(/Img/servicio-mkt360.png) no-repeat center/cover;
+}
+
+/*termina la seccion servicios*/
+
+
+
+/*Seccion Clientes*/
+
+.clientes-box {
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cliente1 {
+    /*background-color: red;*/
+    height: 200px;
+    width: 200px;
+    background: url(/Img/cliente1.png) no-repeat center/cover;
+    
+}
+
+.cliente2 {
+    /*background-color: red;*/
+    height: 200px;
+    width: 200px;
+    background: url(/Img/cliente2.png) no-repeat center/cover;
+}
+
+.cliente3 {
+    height: 200px;
+    width: 200px;
+    background: url(/Img/cliente\ 3.png) no-repeat center/cover;
+}
+
+.cliente4 {
+    height: 200px;
+    width: 200px;
+    background: url(/Img/cliente4.png) no-repeat center/cover;
+}
+
+
+/*Termina Seccion Clientes*/
+
+
+
 footer {
     width: 100%;
     background-color: #364552 solid 0.5px;;
     color:white;
     padding: 20px;
     margin-top: auto;
-}
-
-footer section {
     display: flex;
     justify-content: space-around;
+    height: 320px;
 }
 
+.footer-form {
+    /*background-color: #DE8000;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    width: 350px;
+}
+
+.footer-marca{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 150px;
+}
+
+#input-form {
+    width: 70%;
+    text-align: left;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.enviar_form {
+    color: white;
+    background-color: #ffc311;
+    border: 1px solid #ffc311;
+    color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 40px;
+    margin-top: 10px;
+	letter-spacing: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
 
 
@@ -265,7 +412,7 @@ footer section {
 }
 
 .menu {
-    background-color: #e08300;
+    background-color: #ffc311;
     
     border-radius: 5px;
     width: 100vw;
@@ -348,7 +495,9 @@ footer section {
 
 /*Empieza la section2*/
 
-
+#Exp {
+    margin-top: 50px;
+}
 
 .section2 {
     margin: -1px 20px;
@@ -360,6 +509,7 @@ footer section {
     justify-content: center;
     align-items: center;
     height: 1000px;
+    margin-top: 0px;
 }
 
 .section2-cards-1, .section2-cards-2{
@@ -375,4 +525,89 @@ footer section {
 }
 
 /*Termina la section2*/
+
+
+/*Seccion Servicios*/
+
+.servicios {
+    padding: 40px 0px;
+    margin: -1px 20px;
+}
+
+.servicios_box {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 95%;
+    padding: 50px 0px 0px 0px ;
+}
+
+.servicio-ads, .servicio-programacion, .servicio-360  {
+    /*background-color: #DE8000;*/
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+/*Termina Seccion Servicios*/
+
+/*Seccion Clientes*/
+
+.clientes-box {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flecha_cliente {
+    display: none;
+}
+
+.cliente1 {
+    /*background-color: red;*/
+    height: 150px;
+    width: 150px;
+}
+
+.cliente2 {
+    /*background-color: red;*/
+    height: 150px;
+    width: 150px;
+}
+
+.cliente3 {
+    height: 150px;
+    width: 150px;
+}
+
+.cliente4 {
+    height: 150px;
+    width: 150px;
+}
+
+
+/*Termina Seccion Clientes*/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.footer-form {
+    width: 100%;
+}
+
+.footer-marca{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px 0px;
+
+}
+
+
 }
